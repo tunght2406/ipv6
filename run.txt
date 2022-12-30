@@ -1,2 +1,13 @@
 bash <(curl -s "https://raw.githubusercontent.com/tunght2406/ipv6/main/install.sh")
 bash <(curl -s "https://raw.githubusercontent.com/quayvlog/proxyv6/main/install.sh")
+permision:
+
+b1: nâng quyền
+chmod u+x setup_proxy_1.sh
+
+b2: chạy file
+./setup_proxy_1.sh
+
+-> nếu lỗi: M: bad interpreter: No such file or directory
+thì chạy lệnh dưới rồi thực thi lại bước 2
+sed -i -e 's/\r$//' setup_proxy_1.sh
